@@ -32,6 +32,10 @@ class $classname$ extends SimpleApplication {
     val cartoonEdgeProcess: CartoonEdgeProcessor = new CartoonEdgeProcessor
     viewPort.addProcessor(cartoonEdgeProcess)
     cam.setLocation(new Vector3f(0, 10, 40))
+
+    oas = new StereoCamAppState()
+    stateManager.attach(oas)
+
   }
 
   override def simpleUpdate(tpf: Float) {
@@ -47,5 +51,6 @@ class $classname$ extends SimpleApplication {
   private var lightMdl: Geometry = null
   private var vmdControl: VMDControl = null
   private var time: Float = 0
+  private var oas:StereoCamAppState = null
 }
 

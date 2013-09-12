@@ -1,0 +1,27 @@
+MaterialDef My MaterialDef {
+ 
+    MaterialParameters {
+        Int NumSamples
+        Texture2D Texture
+        Vector2 LensCenter
+        Vector2 ScreenCenter
+        Vector2 Scale
+        Vector2 ScaleIn
+        Vector4 HmdWarpParam
+        Vector2 Texoffset
+    }
+ 
+    Technique {
+        VertexShader GLSL100:   Common/MatDefs/Post/Post.vert
+        FragmentShader GLSL100: MatDefs/BarrelDistortion.frag
+ 
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+        RenderState {
+            DepthTest Off
+            DepthWrite Off
+        }
+    }
+ 
+}

@@ -17,7 +17,7 @@ class MainActivity extends AndroidHarness {
   appClass = "$package$.$classname$";
   eglConfigType = ConfigType.BEST
   eglConfigVerboseLogging = false
-  screenOrientation = ActivityInfo.SCREEN_ORIENTATION_NOSENSOR
+  screenOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
   screenFullScreen = false
   screenShowTitle = true
   /** Called when the activity is first created. */
