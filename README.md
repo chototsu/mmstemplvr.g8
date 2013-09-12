@@ -6,6 +6,9 @@ mmstemplvr.g8
 ## Original
 http://hub.jmonkeyengine.org/forum/topic/oculus-rift-support/
 
+## Sample application
+https://play.google.com/store/apps/details?id=info.projectkyoto.mms.tinyvr
+
 ## First
 Install giter8
 https://github.com/n8han/giter8
